@@ -3,14 +3,26 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-//this document will be used to store components to the MVC until they are ready to be used
+
+import static java.lang.Integer.parseInt;
+//this file will be used to store components to the MVC until they are ready to be used
 
 public class Locker {
     public static void main(String[] args) {
+        //krypterar ett meddelande med XOR metoden
+        int teck = 'd';
+        int key = '¤';
+        String binaryKey = Integer.toBinaryString(key);
+        String binaryTeck = Integer.toBinaryString(teck);
+        int IntbinaryTeck = parseInt(binaryTeck,2);
+        int IntbinaryKey = parseInt(binaryKey,2);
+        int xorTeck = IntbinaryTeck^IntbinaryKey;
+
+
         //creating a file and writing in it
     try {
         FileWriter printer = new FileWriter("encrypted.txt");
-        printer.write("It will be done sire.");
+        printer.write(xorTeck);
         printer.close();
         System.out.println("File made and/or updated.");
     } catch (
@@ -18,7 +30,8 @@ public class Locker {
         System.out.println("An error occurred.");
         e.printStackTrace();
     }
-    //reading the file
+
+    //reading said file
         try {
             File myObj = new File("encrypted.txt");
             Scanner myReader = new Scanner(myObj);

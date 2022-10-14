@@ -4,9 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
 import static java.lang.Integer.parseInt;
-import static java.lang.Integer.valueOf;
 //this file will be used to store components to the MVC until they are ready to be used
 
 public class Locker {
@@ -57,5 +55,7 @@ public class Locker {
             e.printStackTrace();
         }
 
+
     }
+
 }

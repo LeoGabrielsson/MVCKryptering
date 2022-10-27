@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MVC Kryptering.iml" filepath="$PROJECT_DIR$/MVC Kryptering.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MVCKryptering.iml" filepath="$PROJECT_DIR$/MVCKryptering.iml" />
     </modules>
   </component>
 </project>

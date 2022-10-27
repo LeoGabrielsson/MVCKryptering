@@ -1,3 +1,5 @@
+package MVCKryptering;
+
 import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,9 +16,15 @@ public class Model {
     public void setMess(String mess) {
         this.mess = mess;
     }
+    public String getMess(){
+        return mess;
+    }
 
     public void setKey(String key) {
         this.key = key;
+    }
+    public String getKey(){
+        return key;
     }
 
     public String getFinish() {
